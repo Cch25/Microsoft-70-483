@@ -1,0 +1,8 @@
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.deps.json
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.dll
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.pdb
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.csprojAssemblyReference.cache
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.AssemblyInfoInputs.cache
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.AssemblyInfo.cs
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.dll
+C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.pdb

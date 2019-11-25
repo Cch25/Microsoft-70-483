@@ -1,0 +1,8 @@
+D:\Programare\C#\70-483 Examples\TPL\bin\Debug\netcoreapp3.0\TPL.deps.json
+D:\Programare\C#\70-483 Examples\TPL\bin\Debug\netcoreapp3.0\TPL.dll
+D:\Programare\C#\70-483 Examples\TPL\bin\Debug\netcoreapp3.0\TPL.pdb
+D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\TPL.csprojAssemblyReference.cache
+D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\TPL.AssemblyInfoInputs.cache
+D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\TPL.AssemblyInfo.cs
+D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\TPL.dll
+D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\TPL.pdb

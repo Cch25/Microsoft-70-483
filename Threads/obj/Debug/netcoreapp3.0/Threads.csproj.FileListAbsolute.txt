@@ -1,0 +1,8 @@
+C:\Users\erufe\source\repos\70-483 Examples\Threads\bin\Debug\netcoreapp3.0\Threads.deps.json
+C:\Users\erufe\source\repos\70-483 Examples\Threads\bin\Debug\netcoreapp3.0\Threads.dll
+C:\Users\erufe\source\repos\70-483 Examples\Threads\bin\Debug\netcoreapp3.0\Threads.pdb
+C:\Users\erufe\source\repos\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.csprojAssemblyReference.cache
+C:\Users\erufe\source\repos\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.AssemblyInfoInputs.cache
+C:\Users\erufe\source\repos\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.AssemblyInfo.cs
+C:\Users\erufe\source\repos\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.dll
+C:\Users\erufe\source\repos\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.pdb
