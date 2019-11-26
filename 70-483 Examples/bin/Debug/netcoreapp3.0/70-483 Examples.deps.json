@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.0": {
       "70-483 Examples/1.0.0": {
         "dependencies": {
+          "EventHandlers": "1.0.0",
           "ParallelCollectionExample": "1.0.0",
           "ParallelLibrary": "1.0.0",
           "Synchronization": "1.0.0",
@@ -17,6 +18,11 @@
         },
         "runtime": {
           "70-483 Examples.dll": {}
+        }
+      },
+      "EventHandlers/1.0.0": {
+        "runtime": {
+          "EventHandlers.dll": {}
         }
       },
       "ParallelCollectionExample/1.0.0": {
@@ -53,6 +59,11 @@
   },
   "libraries": {
     "70-483 Examples/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventHandlers/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

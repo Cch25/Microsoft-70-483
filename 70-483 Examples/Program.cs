@@ -4,6 +4,8 @@ using ThreadPools;
 using Threads;
 using TPLExample;
 using ParallelCollectionExample;
+using EventHandlers;
+
 namespace _70_483_Examples
 {
     class Program
@@ -77,9 +79,30 @@ namespace _70_483_Examples
 
             #endregion
 
-            #region [ Program flow ]
+            #region [ Delegates, Events, Callbacks and Lambdas]
+         
+            #region [ Events ]
+            EventHandlerExample eventHandler = new EventHandlerExample();
+            //eventHandler.RaiseEvent();
+            //eventHandler.RaiseEventSecure();
+            //eventHandler.RaiseEventHandler();
+            //eventHandler.RaiseEventHandlerWithExeptionHandling(); 
+            #endregion
+
+            #region [ Delegates ]
+            DelegatesAndLambdas dla = new DelegatesAndLambdas();
+            //dla.CreateDelegate(); 
+            #endregion
+
+            #region [ Lambdas ]
+            //dla.Lambda();
+            //dla.Closure();
+            #endregion  
 
             #endregion
+
+
+
         }
     }
 }
