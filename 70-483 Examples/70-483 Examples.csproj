@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventHandlers\EventHandlers.csproj" />
+    <ProjectReference Include="..\ExceptionsExample\ExceptionsExample.csproj" />
     <ProjectReference Include="..\ParallelCollectionExample\ParallelCollectionExample.csproj" />
     <ProjectReference Include="..\Synchronization\Synchronization.csproj" />
     <ProjectReference Include="..\TasksExample\TasksExample.csproj" />

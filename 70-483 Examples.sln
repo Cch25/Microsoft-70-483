@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelCollectionExample",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 1", "Chapter 1", "{F6825258-4419-43F8-832B-D3D548FC0F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandlers", "EventHandlers\EventHandlers.csproj", "{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHandlers", "EventHandlers\EventHandlers.csproj", "{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsExample", "ExceptionsExample\ExceptionsExample.csproj", "{DA847818-F86F-4A40-B6A4-06E8AAB83A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA847818-F86F-4A40-B6A4-06E8AAB83A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA847818-F86F-4A40-B6A4-06E8AAB83A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA847818-F86F-4A40-B6A4-06E8AAB83A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA847818-F86F-4A40-B6A4-06E8AAB83A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{4DFBC424-A793-4CB6-B17C-6871E3AD9B0E} = {F6825258-4419-43F8-832B-D3D548FC0F11}
 		{7A485E39-6B65-4B3E-9823-25B73000E53B} = {F6825258-4419-43F8-832B-D3D548FC0F11}
 		{EE3815CC-2AD7-4A3B-9337-6219ECC4E0C7} = {F6825258-4419-43F8-832B-D3D548FC0F11}
+		{DA847818-F86F-4A40-B6A4-06E8AAB83A5A} = {F6825258-4419-43F8-832B-D3D548FC0F11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56A56002-1B7C-4EEF-B30E-3B85E28368A9}

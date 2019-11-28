@@ -5,6 +5,7 @@ using Threads;
 using TPLExample;
 using ParallelCollectionExample;
 using EventHandlers;
+using ExceptionsExample;
 
 namespace _70_483_Examples
 {
@@ -15,6 +16,8 @@ namespace _70_483_Examples
             ChapterOne();
         }
 
+
+        #region [ Chapter One ]
         private static void ChapterOne()
         {
             #region [ MultiThreading ]
@@ -80,7 +83,7 @@ namespace _70_483_Examples
             #endregion
 
             #region [ Delegates, Events, Callbacks and Lambdas]
-         
+
             #region [ Events ]
             EventHandlerExample eventHandler = new EventHandlerExample();
             //eventHandler.RaiseEvent();
@@ -97,12 +100,48 @@ namespace _70_483_Examples
             #region [ Lambdas ]
             //dla.Lambda();
             //dla.Closure();
-            #endregion  
+            #endregion
 
             #endregion
 
+            #region [ Exceptions and Custom Exceptions]
 
+            #region [ Exceptions ]
+            Exceptions exceptions = new Exceptions();
+            //exceptions.ReadNumbersFromUser();
+            //exceptions.ReadNumberDivideByZeroOrWrongFormat();
+            //PropagateInnerExeption(exceptions);
+            //exceptions.CatchExceptionFromAnotherMethod(); 
+            //exceptions.HandlingInnerExceptions();
+            //System.Console.WriteLine(exceptions.HandlingAggregateExceptions().GetAwaiter().GetResult());
+            #endregion
 
+            #region [ Custom Exceptions ]
+            CustomExceptions customExceptions = new CustomExceptions();
+            //customExceptions.MyCustomException();
+            #endregion
+
+            #endregion
         }
+
+        #region [ Exception Helpers ] 
+        public static void PropagateInnerExeption(Exceptions exceptions)
+        {
+            try
+            {
+                exceptions.ThrowYourOwnExceptionWithInnerException();
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.WriteLine(ex.Message);
+                System.Console.WriteLine(ex.InnerException.Message);
+            }
+        }
+        #endregion
+        #endregion
+
+        #region [ Chapter Two ]
+
+        #endregion
     }
 }
