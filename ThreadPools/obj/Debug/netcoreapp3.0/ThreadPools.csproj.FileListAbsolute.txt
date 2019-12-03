@@ -6,3 +6,11 @@ C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\
 C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.AssemblyInfo.cs
 C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.dll
 C:\Users\erufe\source\repos\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.pdb
+D:\Programare\C#\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.deps.json
+D:\Programare\C#\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.dll
+D:\Programare\C#\70-483 Examples\ThreadPools\bin\Debug\netcoreapp3.0\ThreadPools.pdb
+D:\Programare\C#\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.csprojAssemblyReference.cache
+D:\Programare\C#\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.AssemblyInfoInputs.cache
+D:\Programare\C#\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.AssemblyInfo.cs
+D:\Programare\C#\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.dll
+D:\Programare\C#\70-483 Examples\ThreadPools\obj\Debug\netcoreapp3.0\ThreadPools.pdb

@@ -15,7 +15,8 @@
           "Synchronization": "1.0.0",
           "TasksExample": "1.0.0",
           "ThreadPools": "1.0.0",
-          "Threads": "1.0.0"
+          "Threads": "1.0.0",
+          "Types": "1.0.0"
         },
         "runtime": {
           "70-483 Examples.dll": {}
@@ -59,6 +60,11 @@
       "Threads/1.0.0": {
         "runtime": {
           "Threads.dll": {}
+        }
+      },
+      "Types/1.0.0": {
+        "runtime": {
+          "Types.dll": {}
         }
       }
     }
@@ -105,6 +111,11 @@
       "sha512": ""
     },
     "Threads/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Types/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

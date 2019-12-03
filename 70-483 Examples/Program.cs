@@ -6,6 +6,7 @@ using TPLExample;
 using ParallelCollectionExample;
 using EventHandlers;
 using ExceptionsExample;
+using Types;
 
 namespace _70_483_Examples
 {
@@ -14,6 +15,8 @@ namespace _70_483_Examples
         static void Main(string[] args)
         {
             ChapterOne();
+            ChapterTwo();
+           
         }
 
 
@@ -138,10 +141,19 @@ namespace _70_483_Examples
             }
         }
         #endregion
+
         #endregion
 
         #region [ Chapter Two ]
-
+        public static void ChapterTwo()
+        {
+            CreateTypes createTypes = new CreateTypes();
+            //createTypes.StructAndClasses();
+            //createTypes.Aliens();
+            //createTypes.MyStackGeneric();
+            //createTypes.ThisConstructor();
+            //createTypes.DestoryAlien();
+        }
         #endregion
     }
 }
