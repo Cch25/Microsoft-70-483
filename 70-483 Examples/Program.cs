@@ -153,6 +153,7 @@ namespace _70_483_Examples
             //createTypes.MyStackGeneric();
             //createTypes.ThisConstructor();
             //createTypes.DestoryAlien();
+            //createTypes.SummaryOfCh1to2_1();
         }
         #endregion
     }

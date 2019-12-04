@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Types
 {
@@ -71,8 +73,124 @@ namespace Types
             }
         }
 
+        public void SummaryOfCh1to2_1()
+        {
+            Invoice invoice = new Invoice();
+            invoice.GetDate();
+            invoice.DoPrint();
+            invoice.DocumentTypePrint(DocumentType.DOCX);
+            invoice.OnInvoiceAdded += (sender, args) => { Console.WriteLine($"\t---[Event]:New invoice added {args.DocumentType}"); };
+            Task t = Task.Run(() =>
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    invoice.AddInvoice(invoice);
+                    Thread.Sleep(1_000);
+                }
+            });
+            Thread.Sleep(500);
+            Document prepaidInvoice = new PrePaidInvoice();
+            prepaidInvoice.GetDate();
+            Thread.Sleep(500);
+            prepaidInvoice.DoPrint();
+            Thread.Sleep(500);
+            prepaidInvoice.DocumentTypePrint(null);
+            Task.WaitAll(new[] { t });
+        }
     }
 
+    #region [ Summary up to Ch 2.1 ]
+    public enum DocumentType
+    {
+        PDF = 0,
+        DOCX = 1
+    }
+    public abstract class Document
+    {
+        public DocumentType DocumentType { get; set; }
+        protected List<Document> Documents { get; set; }
+        public void GetDate()
+        {
+            Console.WriteLine($"Hello from get date it is {DateTime.Now.Hour}" +
+                $":{DateTime.Now.Minute}");
+        }
+        public Document(DocumentType documentType)
+        {
+            DocumentType = documentType;
+            Documents = new List<Document>();
+        }
+
+        public virtual void DoPrint()
+        {
+            Console.WriteLine("I should print a document");
+        }
+        public abstract void DocumentTypePrint(DocumentType? documentType);
+        public abstract void AddInvoice(Document document);
+    }
+    public class Invoice : Document
+    {
+        private DocumentType documentType;
+        public event EventHandler<Invoice> OnInvoiceAdded = (sender, args) => { };
+        public Invoice(DocumentType documentType) : base(documentType)
+        {
+            this.documentType = documentType;
+        }
+        public Invoice() : this(DocumentType.DOCX)
+        {
+        }
+        public override void DoPrint()
+        {
+            Console.WriteLine("I'm a cool invoice :)");
+        }
+
+        public override void DocumentTypePrint(DocumentType? documentType)
+        {
+            Console.WriteLine($"Printing as a {documentType ?? this.documentType }");
+            if (documentType == null)
+            {
+                DocumentException de = DocumentException.FromDocumentException(null);
+                Console.WriteLine(de?.Message);
+                throw new DocumentException("You shoud've provide a value", new ArgumentNullException());
+            }
+        }
+
+        public override void AddInvoice(Document document)
+        {
+            if (document != null)
+            {
+                Documents.Add(document);
+                OnInvoiceAdded.Invoke(this, document as Invoice);
+            }
+
+        }
+    }
+    public class PrePaidInvoice : Invoice
+    {
+        public override void DoPrint()
+        {
+            base.DoPrint();
+            Console.WriteLine("Prepaid invoice");
+        }
+        public override void DocumentTypePrint(DocumentType? documentType)
+        {
+            Console.WriteLine($"Printing as a {documentType ?? DocumentType.PDF}");
+        }
+    }
+    [Serializable]
+    public class DocumentException : Exception
+    {
+        public DocumentException() { }
+        public DocumentException(string message) : base(message) { }
+        public DocumentException(string message, Exception innerException = null) : base(message, innerException) { }
+        public static DocumentException FromDocumentException(Guid? documentId)
+        {
+            return documentId == null ? new DocumentException("Document id must exist", new ArgumentNullException()) : null;
+        }
+
+    }
+    #endregion
+
+    #region [ Learn Ch 2.1 ]
     public class DestroyAlien
     {
         public int X { get; }
@@ -92,7 +210,7 @@ namespace Types
         {
             Lives -= lives;
             Console.WriteLine($"Lives left {Lives}");
-            if(Lives < 0)
+            if (Lives < 0)
             {
                 AlienDestroyed.Invoke(this, Lives);
                 return false;
@@ -172,4 +290,5 @@ namespace Types
             return $"X: {X} Y: {Y} Lives: {Lives}";
         }
     }
+    #endregion
 }
