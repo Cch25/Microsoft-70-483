@@ -7,6 +7,8 @@ using ParallelCollectionExample;
 using EventHandlers;
 using ExceptionsExample;
 using Types;
+using ConsumeType;
+using Encapsulation;
 
 namespace _70_483_Examples
 {
@@ -154,6 +156,13 @@ namespace _70_483_Examples
             //createTypes.ThisConstructor();
             //createTypes.DestoryAlien();
             //createTypes.SummaryOfCh1to2_1();
+
+            ConsumeTypes consumeTypes = new ConsumeTypes();
+            //consumeTypes.BoxingAndUnboxing();
+            //consumeTypes.ImplicitExplicitOperator();
+            //consumeTypes.UsingDynamic();
+
+
         }
         #endregion
     }
