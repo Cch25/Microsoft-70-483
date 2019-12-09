@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.0": {
       "70-483 Examples/1.0.0": {
         "dependencies": {
+          "ClassHierarchy": "1.0.0",
           "ConsumeTypes": "1.0.0",
           "EventHandlers": "1.0.0",
           "ExceptionsExample": "1.0.0",
@@ -21,6 +22,11 @@
         },
         "runtime": {
           "70-483 Examples.dll": {}
+        }
+      },
+      "ClassHierarchy/1.0.0": {
+        "runtime": {
+          "ClassHierarchy.dll": {}
         }
       },
       "ConsumeTypes/1.0.0": {
@@ -77,6 +83,11 @@
   },
   "libraries": {
     "70-483 Examples/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassHierarchy/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

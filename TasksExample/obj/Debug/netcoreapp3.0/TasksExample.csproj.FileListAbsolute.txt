@@ -9,7 +9,6 @@ C:\Users\erufe\source\repos\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0
 D:\Programare\C#\70-483 Examples\TasksExample\bin\Debug\netcoreapp3.0\TasksExample.deps.json
 D:\Programare\C#\70-483 Examples\TasksExample\bin\Debug\netcoreapp3.0\TasksExample.dll
 D:\Programare\C#\70-483 Examples\TasksExample\bin\Debug\netcoreapp3.0\TasksExample.pdb
-D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.csprojAssemblyReference.cache
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.AssemblyInfoInputs.cache
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.AssemblyInfo.cs
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.dll

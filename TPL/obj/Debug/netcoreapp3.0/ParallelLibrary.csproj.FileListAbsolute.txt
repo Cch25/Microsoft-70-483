@@ -5,4 +5,3 @@ D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\ParallelLibrary.Ass
 D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\ParallelLibrary.AssemblyInfo.cs
 D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\ParallelLibrary.dll
 D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\ParallelLibrary.pdb
-D:\Programare\C#\70-483 Examples\TPL\obj\Debug\netcoreapp3.0\ParallelLibrary.csprojAssemblyReference.cache

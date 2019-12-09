@@ -8,7 +8,7 @@ using EventHandlers;
 using ExceptionsExample;
 using Types;
 using ConsumeType;
-using Encapsulation;
+using Hierarchies;
 
 namespace _70_483_Examples
 {
@@ -149,18 +149,28 @@ namespace _70_483_Examples
         #region [ Chapter Two ]
         public static void ChapterTwo()
         {
+            #region [ Create types ]
             CreateTypes createTypes = new CreateTypes();
             //createTypes.StructAndClasses();
             //createTypes.Aliens();
             //createTypes.MyStackGeneric();
             //createTypes.ThisConstructor();
             //createTypes.DestoryAlien();
-            //createTypes.SummaryOfCh1to2_1();
+            //createTypes.SummaryOfCh1to2_1(); 
+            #endregion
 
+            #region [ Consume types ]
             ConsumeTypes consumeTypes = new ConsumeTypes();
             //consumeTypes.BoxingAndUnboxing();
             //consumeTypes.ImplicitExplicitOperator();
-            //consumeTypes.UsingDynamic();
+            //consumeTypes.UsingDynamic(); 
+            #endregion
+
+            #region [ Class hierarchies ]
+            ClassHierarchy ch = new ClassHierarchy();
+            //ch.DepositInMyBank(20);
+            //ch.ComparePricesInMyBank();
+            #endregion
 
 
         }
