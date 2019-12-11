@@ -9,6 +9,7 @@ using ExceptionsExample;
 using Types;
 using ConsumeType;
 using Hierarchies;
+using TypesWithReflection;
 
 namespace _70_483_Examples
 {
@@ -172,7 +173,15 @@ namespace _70_483_Examples
             //ch.ComparePricesInMyBank();
             #endregion
 
-
+            #region [ Reflection ]
+            RuntimeReflection reflection = new RuntimeReflection();
+            //reflection.TestConditional();
+            //reflection.CheckAttribute();
+            //reflection.CheckCustomAttribute();
+            //reflection.IdentityMembersInClass();
+            //reflection.CallMethodUsingReflection();
+            //reflection.ScanAssembly();
+            #endregion
         }
         #endregion
     }

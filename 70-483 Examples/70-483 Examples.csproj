@@ -17,6 +17,7 @@
     <ProjectReference Include="..\ThreadPools\ThreadPools.csproj" />
     <ProjectReference Include="..\Threads\Threads.csproj" />
     <ProjectReference Include="..\TPL\ParallelLibrary.csproj" />
+    <ProjectReference Include="..\TypesWithReflection\TypesWithReflection.csproj" />
     <ProjectReference Include="..\Types\Types.csproj" />
   </ItemGroup>
 

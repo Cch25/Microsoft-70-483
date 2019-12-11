@@ -13,3 +13,4 @@ D:\Programare\C#\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.Assembl
 D:\Programare\C#\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.AssemblyInfo.cs
 D:\Programare\C#\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.dll
 D:\Programare\C#\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.pdb
+D:\Programare\C#\70-483 Examples\Threads\obj\Debug\netcoreapp3.0\Threads.csprojAssemblyReference.cache

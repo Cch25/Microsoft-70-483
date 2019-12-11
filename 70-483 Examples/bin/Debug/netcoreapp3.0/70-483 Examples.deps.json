@@ -18,7 +18,8 @@
           "TasksExample": "1.0.0",
           "ThreadPools": "1.0.0",
           "Threads": "1.0.0",
-          "Types": "1.0.0"
+          "Types": "1.0.0",
+          "TypesWithReflection": "1.0.0"
         },
         "runtime": {
           "70-483 Examples.dll": {}
@@ -77,6 +78,14 @@
       "Types/1.0.0": {
         "runtime": {
           "Types.dll": {}
+        }
+      },
+      "TypesWithReflection/1.0.0": {
+        "dependencies": {
+          "ClassHierarchy": "1.0.0"
+        },
+        "runtime": {
+          "TypesWithReflection.dll": {}
         }
       }
     }
@@ -138,6 +147,11 @@
       "sha512": ""
     },
     "Types/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TypesWithReflection/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
