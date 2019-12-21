@@ -174,14 +174,47 @@ namespace _70_483_Examples
             #endregion
 
             #region [ Reflection ]
+           
+            #region [ Attributes, Methods Invoke, Load Assemblies]
             RuntimeReflection reflection = new RuntimeReflection();
             //reflection.TestConditional();
             //reflection.CheckAttribute();
             //reflection.CheckCustomAttribute();
             //reflection.IdentityMembersInClass();
             //reflection.CallMethodUsingReflection();
-            //reflection.ScanAssembly();
+            //reflection.ScanAssembly(); 
             #endregion
+
+            #region [ Code DOM , Expression Trees and Reflection ]
+
+            #region [ CodeDOM ]
+            CodeDOMExample cde = new CodeDOMExample();
+            //cde.GenerateCodDOM();
+
+            #endregion
+
+            #region [ Expression Trees ]
+            ExpressionTrees et = new ExpressionTrees();
+            //et.ExpressionTreeMultiply();
+            //et.ExpressionTreeModifyToAdd();
+            //et.IsAdultFemale(); 
+            #endregion
+
+            #region [ More Reflection ]
+            Assemblies assemblies = new Assemblies();
+            //assemblies.DisplayAssemblyInfo();
+            //assemblies.GetPropertyInfo();
+            //assemblies.GetMethodInfo(); 
+            #endregion
+
+            #endregion
+
+            #endregion
+
+            #region [ Object life cycle ]
+
+            #endregion
+
         }
         #endregion
     }
