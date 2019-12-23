@@ -10,6 +10,7 @@ using Types;
 using ConsumeType;
 using Hierarchies;
 using TypesWithReflection;
+using StringManipulation;
 
 namespace _70_483_Examples
 {
@@ -211,9 +212,24 @@ namespace _70_483_Examples
 
             #endregion
 
-            #region [ Object life cycle ]
-
+            #region [ Manipulate strings ]
+            ManipulateStrings manipulateStrings = new ManipulateStrings();
+            //manipulateStrings.StringInterning();
+            //manipulateStrings.StringWriter();
+            //manipulateStrings.StringReader();
+            //manipulateStrings.SearchStrings();
+            //manipulateStrings.StringComparisonAndCulture();
+            //manipulateStrings.FormatString();
+            //manipulateStrings.FormattableString();
+            //manipulateStrings.MusicTrackFormatter();
             #endregion
+
+        }
+        #endregion
+
+        #region [ Chapter Three ]
+        public void ChapterThree()
+        {
 
         }
         #endregion
