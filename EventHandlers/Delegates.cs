@@ -11,8 +11,8 @@ namespace EventHandlers
             Delegates delegateExpl = new Delegates();
             IntOperation addOperation = new IntOperation(delegateExpl.Add);
             Console.WriteLine(addOperation(5, 5));
-            IntOperation substractOperation = new IntOperation(delegateExpl.Substract);
-            Console.WriteLine(substractOperation(5, 5));
+            IntOperation subtractOperation = new IntOperation(delegateExpl.Substract);
+            Console.WriteLine(subtractOperation(5, 5));
         }
 
         public void Lambda()

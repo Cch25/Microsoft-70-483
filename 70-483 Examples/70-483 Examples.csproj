@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,6 +9,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ClassHierarchy\ClassHierarchy.csproj" />
     <ProjectReference Include="..\ConsumeTypes\ConsumeTypes.csproj" />
+    <ProjectReference Include="..\DebugExample\DebugExample.csproj" />
+    <ProjectReference Include="..\Encryption\Encryption.csproj" />
     <ProjectReference Include="..\EventHandlers\EventHandlers.csproj" />
     <ProjectReference Include="..\ExceptionsExample\ExceptionsExample.csproj" />
     <ProjectReference Include="..\ParallelCollectionExample\ParallelCollectionExample.csproj" />

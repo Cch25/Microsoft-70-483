@@ -13,3 +13,4 @@ D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExamp
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.AssemblyInfo.cs
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.dll
 D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.pdb
+D:\Programare\C#\70-483 Examples\TasksExample\obj\Debug\netcoreapp3.0\TasksExample.csprojAssemblyReference.cache

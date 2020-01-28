@@ -11,6 +11,8 @@ using ConsumeType;
 using Hierarchies;
 using TypesWithReflection;
 using StringManipulation;
+using Encryption;
+using DebugExample;
 
 namespace _70_483_Examples
 {
@@ -20,7 +22,7 @@ namespace _70_483_Examples
         {
             ChapterOne();
             ChapterTwo();
-           
+            ChapterThree();
         }
 
 
@@ -228,9 +230,26 @@ namespace _70_483_Examples
         #endregion
 
         #region [ Chapter Three ]
-        public void ChapterThree()
+        public static void ChapterThree()
         {
+            #region [ Symmetric and asymmetric encryption]
+            SymmetricAndAsymmetricEncryption saae = new SymmetricAndAsymmetricEncryption();
 
+            #endregion
+            #region [ Trace and debug ]
+            TraceAndDebug tad = new TraceAndDebug();
+            //tad.DebugMethod();
+            //tad.TraceMethod();
+            //tad.DebugAssertions();
+            //tad.TraceListeners();
+            //tad.TraceSources();
+            PerformanceCounters pc = new PerformanceCounters();
+            //pc.PerformanceCounterExample();
+            //pc.RunCustomCounter();
+            EventLogs eventLogs = new EventLogs();
+            eventLogs.CreateEventLogs();
+            eventLogs.ReadFromEventLogs();
+            #endregion
         }
         #endregion
     }
