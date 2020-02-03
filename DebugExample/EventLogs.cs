@@ -59,5 +59,24 @@ namespace DebugExample
             Console.WriteLine("Press any key");
             Console.ReadKey();
         }
+
+        public void EventLogBinder()
+        {
+            string categoryName = "Image Processing";
+            EventLog eventLog = new EventLog
+            {
+                Source = categoryName
+            };
+            eventLog.EntryWritten += EventLog_EntryWritten;
+            eventLog.EnableRaisingEvents = true;
+            Console.WriteLine("Listening for log events");
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+        }
+
+        private void EventLog_EntryWritten(object sender, EntryWrittenEventArgs e)
+        {
+            Console.WriteLine(e.Entry.Message);
+        }
     }
 }

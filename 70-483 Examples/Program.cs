@@ -249,6 +249,7 @@ namespace _70_483_Examples
             EventLogs eventLogs = new EventLogs();
             //eventLogs.WritingInAnEventLog();
             //eventLogs.ReadingFromAnEventLog();
+            //eventLogs.EventLogBinder();
             #endregion
         }
         #endregion
