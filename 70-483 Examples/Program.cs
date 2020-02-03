@@ -247,8 +247,8 @@ namespace _70_483_Examples
             //pc.PerformanceCounterExample();
             //pc.RunCustomCounter();
             EventLogs eventLogs = new EventLogs();
-            eventLogs.CreateEventLogs();
-            eventLogs.ReadFromEventLogs();
+            //eventLogs.WritingInAnEventLog();
+            //eventLogs.ReadingFromAnEventLog();
             #endregion
         }
         #endregion
