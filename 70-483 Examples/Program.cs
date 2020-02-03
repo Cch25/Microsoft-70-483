@@ -13,6 +13,7 @@ using TypesWithReflection;
 using StringManipulation;
 using Encryption;
 using DebugExample;
+using Files;
 
 namespace _70_483_Examples
 {
@@ -23,6 +24,7 @@ namespace _70_483_Examples
             ChapterOne();
             ChapterTwo();
             ChapterThree();
+            ChapterFour();
         }
 
 
@@ -236,6 +238,7 @@ namespace _70_483_Examples
             SymmetricAndAsymmetricEncryption saae = new SymmetricAndAsymmetricEncryption();
 
             #endregion
+
             #region [ Trace and debug ]
             TraceAndDebug tad = new TraceAndDebug();
             //tad.DebugMethod();
@@ -251,6 +254,17 @@ namespace _70_483_Examples
             //eventLogs.ReadingFromAnEventLog();
             //eventLogs.EventLogBinder();
             #endregion
+        }
+        #endregion
+
+        #region [ ChapterFour ]
+        public static void ChapterFour()
+        {
+            #region [ File I/O ]
+            FilesExample fe = new FilesExample(); 
+
+            #endregion
+
         }
         #endregion
     }

@@ -13,6 +13,7 @@
     <ProjectReference Include="..\Encryption\Encryption.csproj" />
     <ProjectReference Include="..\EventHandlers\EventHandlers.csproj" />
     <ProjectReference Include="..\ExceptionsExample\ExceptionsExample.csproj" />
+    <ProjectReference Include="..\Files\Files.csproj" />
     <ProjectReference Include="..\ParallelCollectionExample\ParallelCollectionExample.csproj" />
     <ProjectReference Include="..\StringManipulation\StringManipulation.csproj" />
     <ProjectReference Include="..\Synchronization\Synchronization.csproj" />
