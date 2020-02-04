@@ -179,7 +179,7 @@ namespace _70_483_Examples
             #endregion
 
             #region [ Reflection ]
-           
+
             #region [ Attributes, Methods Invoke, Load Assemblies]
             RuntimeReflection reflection = new RuntimeReflection();
             //reflection.TestConditional();
@@ -260,11 +260,27 @@ namespace _70_483_Examples
         #region [ ChapterFour ]
         public static void ChapterFour()
         {
-            #region [ File I/O ]
-            FilesExample fe = new FilesExample(); 
-
+            #region [ File I/O and Network]
+            FilesExample fe = new FilesExample();
+            //fe.FileStream();
+            //fe.FileStreamImprove();
+            //fe.StreamWriterAndReader();
+            //fe.ChainStreams();
+            //fe.FileHelperClass();
+            //fe.ExceptionHandling();
+            //fe.FileStorage();
+            //fe.FileInfo();
+            //fe.Directory();
+            //fe.SearchFiles();
+            NetworkReadsAndWrites nraw = new NetworkReadsAndWrites();
+            //_ = nraw.WebRequest();
+            //_ = nraw.WebClient();
+            //_ = nraw.HttpClient();
             #endregion
 
+            #region [ Consume Data ]
+
+            #endregion
         }
         #endregion
     }

@@ -14,6 +14,7 @@
           "Encryption": "1.0.0",
           "EventHandlers": "1.0.0",
           "ExceptionsExample": "1.0.0",
+          "Files": "1.0.0",
           "ParallelCollectionExample": "1.0.0",
           "ParallelLibrary": "1.0.0",
           "StringManipulation": "1.0.0",
@@ -1052,6 +1053,11 @@
           "ExceptionsExample.dll": {}
         }
       },
+      "Files/1.0.0": {
+        "runtime": {
+          "Files.dll": {}
+        }
+      },
       "ParallelCollectionExample/1.0.0": {
         "runtime": {
           "ParallelCollectionExample.dll": {}
@@ -1817,6 +1823,11 @@
       "sha512": ""
     },
     "ExceptionsExample/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Files/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
