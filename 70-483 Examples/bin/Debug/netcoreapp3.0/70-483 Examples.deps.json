@@ -9,6 +9,7 @@
       "70-483 Examples/1.0.0": {
         "dependencies": {
           "ClassHierarchy": "1.0.0",
+          "ConsumeData": "1.0.0",
           "ConsumeTypes": "1.0.0",
           "DebugExample": "1.0.0",
           "Encryption": "1.0.0",
@@ -1022,6 +1023,14 @@
           "ClassHierarchy.dll": {}
         }
       },
+      "ConsumeData/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "ConsumeData.dll": {}
+        }
+      },
       "ConsumeTypes/1.0.0": {
         "runtime": {
           "ConsumeTypes.dll": {}
@@ -1798,6 +1807,11 @@
       "hashPath": "vds.common.1.10.0.nupkg.sha512"
     },
     "ClassHierarchy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ConsumeData/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

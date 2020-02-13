@@ -14,6 +14,7 @@ using StringManipulation;
 using Encryption;
 using DebugExample;
 using Files;
+using ConsumeData;
 
 namespace _70_483_Examples
 {
@@ -279,6 +280,13 @@ namespace _70_483_Examples
             #endregion
 
             #region [ Consume Data ]
+            ConsumeDataExample cd = new ConsumeDataExample();
+            //cd.ConsumeJsonData();
+            //cd.ConsumeXmlData();
+            //cd.ConsumeXmlDataInDOM();
+            #endregion
+
+            #region [ LINQ ]
 
             #endregion
         }
