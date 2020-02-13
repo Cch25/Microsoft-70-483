@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ConvertSoapClient;
+using Newtonsoft.Json;
 using System;
 using System.Data.SqlClient;
 using System.IO;
@@ -14,6 +15,7 @@ namespace ConsumeData
         public void ConsumeJsonData() => new ConsumeDataConnections().ConsumeJSON();
         public void ConsumeXmlData() => new ConsumeDataConnections().ConsumeXML();
         public void ConsumeXmlDataInDOM() => new ConsumeDataConnections().ConsumeXMLInDOM();
+        public void ConsumeSoapClient(int x, int y) => new ConsumeDataConnections().ConsumeSoapService(x,y);
     }
 
     public class ConsumeDataConnections
@@ -73,7 +75,11 @@ namespace ConsumeData
                 Console.WriteLine($"{artist} {title}");
             }
         }
-
+        public void ConsumeSoapService(int x, int y)
+        {
+            ConverterSoapClient client = new ConverterSoapClient(ConverterSoapClient.EndpointConfiguration.ConverterSoap);
+            Console.WriteLine(client.SimpleAdditionAsync(x, y).GetAwaiter().GetResult());
+        }
 
     }
     public class FakeRest

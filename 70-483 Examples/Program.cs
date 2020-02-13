@@ -284,6 +284,7 @@ namespace _70_483_Examples
             //cd.ConsumeJsonData();
             //cd.ConsumeXmlData();
             //cd.ConsumeXmlDataInDOM();
+            cd.ConsumeSoapClient(5,6);
             #endregion
 
             #region [ LINQ ]
