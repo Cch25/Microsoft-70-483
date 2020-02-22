@@ -15,6 +15,7 @@ using Encryption;
 using DebugExample;
 using Files;
 using ConsumeData;
+using QueryData;
 
 namespace _70_483_Examples
 {
@@ -284,10 +285,16 @@ namespace _70_483_Examples
             //cd.ConsumeJsonData();
             //cd.ConsumeXmlData();
             //cd.ConsumeXmlDataInDOM();
-            cd.ConsumeSoapClient(5,6);
+            //cd.ConsumeSoapClient(5,6);
             #endregion
 
             #region [ LINQ ]
+            QueryLinqData qld = new QueryLinqData();
+            //qld.Query();
+            //qld.Projection();
+            //qld.Join();
+            //qld.Group();
+            LinqToXML ltx = new LinqToXML();
 
             #endregion
         }
