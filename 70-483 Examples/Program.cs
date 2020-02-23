@@ -297,7 +297,7 @@ namespace _70_483_Examples
             LinqToXML ltx = new LinqToXML();
             //ltx.ReadXml();
             //ltx.FilterXml();
-            ltx.CreateAddModifyXmlWithLinq();
+            //ltx.CreateAddModifyXmlWithLinq();
             #endregion
         }
         #endregion
