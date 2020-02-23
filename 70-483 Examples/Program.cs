@@ -295,7 +295,9 @@ namespace _70_483_Examples
             //qld.Join();
             //qld.Group();
             LinqToXML ltx = new LinqToXML();
-
+            //ltx.ReadXml();
+            //ltx.FilterXml();
+            ltx.CreateAddModifyXmlWithLinq();
             #endregion
         }
         #endregion
