@@ -10,6 +10,7 @@
     <ProjectReference Include="..\ClassHierarchy\ClassHierarchy.csproj" />
     <ProjectReference Include="..\ConsumeData\ConsumeData.csproj" />
     <ProjectReference Include="..\ConsumeTypes\ConsumeTypes.csproj" />
+    <ProjectReference Include="..\DataSerialization\DataSerialization.csproj" />
     <ProjectReference Include="..\DebugExample\DebugExample.csproj" />
     <ProjectReference Include="..\Encryption\Encryption.csproj" />
     <ProjectReference Include="..\EventHandlers\EventHandlers.csproj" />

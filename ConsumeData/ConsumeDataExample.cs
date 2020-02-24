@@ -1,11 +1,8 @@
 ﻿using ConvertSoapClient;
 using Newtonsoft.Json;
 using System;
-using System.Data.SqlClient;
 using System.IO;
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace ConsumeData
@@ -35,9 +32,9 @@ namespace ConsumeData
             string XMLDocument = "<?xml version=\"1.0\" encoding=\"utf-16\"?>" +
                                 "<MusicTrack xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
                                 "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"> " +
-                                "<Artist>Rob Miles</Artist> " +
-                                "<Title>My Way</Title> " +
-                                "<Length>150</Length>" +
+                                    "<Artist>Rob Miles</Artist> " +
+                                    "<Title>My Way</Title> " +
+                                    "<Length>150</Length>" +
                                 "</MusicTrack>";
             using (StringReader sr = new StringReader(XMLDocument))
             {
@@ -53,12 +50,12 @@ namespace ConsumeData
         public void ConsumeXMLInDOM()
         {
             string XMLDocument = "<?xml version=\"1.0\" encoding=\"utf-16\"?>" +
-                            "<MusicTrack xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
-                            "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"> " +
-                            "<Artist>Rob Miles</Artist> " +
-                            "<Title>My Way</Title> " +
-                            "<Length>150</Length>" +
-                            "</MusicTrack>";
+                                "<MusicTrack xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" " +
+                                "xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"> " +
+                                    "<Artist>Rob Miles</Artist> " +
+                                    "<Title>My Way</Title> " +
+                                    "<Length>150</Length>" +
+                                "</MusicTrack>";
 
             XmlDocument xml = new XmlDocument();
             xml.LoadXml(XMLDocument);

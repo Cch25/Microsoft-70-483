@@ -16,6 +16,7 @@ using DebugExample;
 using Files;
 using ConsumeData;
 using QueryData;
+using DataSerialization;
 
 namespace _70_483_Examples
 {
@@ -298,6 +299,19 @@ namespace _70_483_Examples
             //ltx.ReadXml();
             //ltx.FilterXml();
             //ltx.CreateAddModifyXmlWithLinq();
+            #endregion
+
+            #region [ Data Serialization and Deserialization ]
+            SerializeData sd = new SerializeData();
+            //sd.BinarySerialization();
+            //sd.BinaryDeserialization();
+            CustomSerialization cs = new CustomSerialization();
+            //cs.ArtistsSerializationApproachOne();
+            //cs.ArtSerializationApproachTwo();
+            VersioningSerialization vs = new VersioningSerialization();
+            //vs.Versionate();
+            SerializeXML sxml = new SerializeXML();
+            sxml.XMLSerialize();
             #endregion
         }
         #endregion

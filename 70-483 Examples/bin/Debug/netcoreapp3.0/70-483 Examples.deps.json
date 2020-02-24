@@ -11,6 +11,7 @@
           "ClassHierarchy": "1.0.0",
           "ConsumeData": "1.0.0",
           "ConsumeTypes": "1.0.0",
+          "DataSerialization": "1.0.0",
           "DebugExample": "1.0.0",
           "Encryption": "1.0.0",
           "EventHandlers": "1.0.0",
@@ -1143,6 +1144,11 @@
           "ConsumeTypes.dll": {}
         }
       },
+      "DataSerialization/1.0.0": {
+        "runtime": {
+          "DataSerialization.dll": {}
+        }
+      },
       "DebugExample/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "3.1.1",
@@ -1985,6 +1991,11 @@
       "sha512": ""
     },
     "ConsumeTypes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataSerialization/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
