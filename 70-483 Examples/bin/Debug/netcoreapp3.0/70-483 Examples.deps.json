@@ -20,6 +20,7 @@
           "ParallelCollectionExample": "1.0.0",
           "ParallelLibrary": "1.0.0",
           "QueryData": "1.0.0",
+          "StoreAndRetrieveDataInCollections": "1.0.0",
           "StringManipulation": "1.0.0",
           "Synchronization": "1.0.0",
           "TasksExample": "1.0.0",
@@ -1195,6 +1196,11 @@
           "QueryData.dll": {}
         }
       },
+      "StoreAndRetrieveDataInCollections/1.0.0": {
+        "runtime": {
+          "StoreAndRetrieveDataInCollections.dll": {}
+        }
+      },
       "StringManipulation/1.0.0": {
         "dependencies": {
           "dotNetRDF": "2.3.0"
@@ -2036,6 +2042,11 @@
       "sha512": ""
     },
     "QueryData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreAndRetrieveDataInCollections/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

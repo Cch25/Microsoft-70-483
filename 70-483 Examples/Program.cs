@@ -17,6 +17,7 @@ using Files;
 using ConsumeData;
 using QueryData;
 using DataSerialization;
+using StoreAndRetrieveDataInCollections;
 
 namespace _70_483_Examples
 {
@@ -313,7 +314,17 @@ namespace _70_483_Examples
             SerializeXML sxml = new SerializeXML();
             //sxml.XMLSerialize();
             DataContractSerializerXML dcs = new DataContractSerializerXML();
-            dcs.SerializeWithDataContractSerializer();
+            //dcs.SerializeWithDataContractSerializer();
+            #endregion
+
+            #region [ Collections ]
+            StoreAndRetrieve sar = new StoreAndRetrieve();
+            //sar.BasicCollections();
+            //sar.CountLetterOccurencies();
+            //sar.HashSets();
+            //sar.StacksAndQueues();
+            CustomCollections cc = new CustomCollections();
+
             #endregion
         }
         #endregion

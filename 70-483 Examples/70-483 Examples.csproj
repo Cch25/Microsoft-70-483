@@ -18,6 +18,7 @@
     <ProjectReference Include="..\Files\Files.csproj" />
     <ProjectReference Include="..\ParallelCollectionExample\ParallelCollectionExample.csproj" />
     <ProjectReference Include="..\QueryData\QueryData.csproj" />
+    <ProjectReference Include="..\StoreAndRetrieveDataInCollections\StoreAndRetrieveDataInCollections.csproj" />
     <ProjectReference Include="..\StringManipulation\StringManipulation.csproj" />
     <ProjectReference Include="..\Synchronization\Synchronization.csproj" />
     <ProjectReference Include="..\TasksExample\TasksExample.csproj" />

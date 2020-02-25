@@ -51,7 +51,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapService", "SoapService\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueryData", "QueryData\QueryData.csproj", "{0BF9D6A6-2853-42A6-9294-F25619EE2B84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSerialization", "DataSerialization\DataSerialization.csproj", "{57974C43-3C88-4D7A-9B0E-0204AF571DBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataSerialization", "DataSerialization\DataSerialization.csproj", "{57974C43-3C88-4D7A-9B0E-0204AF571DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreAndRetrieveDataInCollections", "StoreAndRetrieveDataInCollections\StoreAndRetrieveDataInCollections.csproj", "{578C5DDA-6C26-4081-AFA6-67723AEAF7F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{57974C43-3C88-4D7A-9B0E-0204AF571DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57974C43-3C88-4D7A-9B0E-0204AF571DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57974C43-3C88-4D7A-9B0E-0204AF571DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{578C5DDA-6C26-4081-AFA6-67723AEAF7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{578C5DDA-6C26-4081-AFA6-67723AEAF7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{578C5DDA-6C26-4081-AFA6-67723AEAF7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{578C5DDA-6C26-4081-AFA6-67723AEAF7F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{6BA5FBD2-E9D2-4D10-8A3A-B3AFB92629D9} = {AF367797-D865-4D0B-BD2B-588310FAEBB8}
 		{0BF9D6A6-2853-42A6-9294-F25619EE2B84} = {AF367797-D865-4D0B-BD2B-588310FAEBB8}
 		{57974C43-3C88-4D7A-9B0E-0204AF571DBD} = {AF367797-D865-4D0B-BD2B-588310FAEBB8}
+		{578C5DDA-6C26-4081-AFA6-67723AEAF7F7} = {AF367797-D865-4D0B-BD2B-588310FAEBB8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56A56002-1B7C-4EEF-B30E-3B85E28368A9}
