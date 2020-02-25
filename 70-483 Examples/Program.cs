@@ -311,7 +311,9 @@ namespace _70_483_Examples
             VersioningSerialization vs = new VersioningSerialization();
             //vs.Versionate();
             SerializeXML sxml = new SerializeXML();
-            sxml.XMLSerialize();
+            //sxml.XMLSerialize();
+            DataContractSerializerXML dcs = new DataContractSerializerXML();
+            dcs.SerializeWithDataContractSerializer();
             #endregion
         }
         #endregion
