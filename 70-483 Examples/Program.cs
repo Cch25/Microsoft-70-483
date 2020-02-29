@@ -240,7 +240,21 @@ namespace _70_483_Examples
         {
             #region [ Symmetric and asymmetric encryption]
             SymmetricAndAsymmetricEncryption saae = new SymmetricAndAsymmetricEncryption();
+            //saae.AesEncryption();
+            //saae.AesDecryption();
+            //saae.RSAEncryptionDecryption();
+            //saae.KeyStorageLocal();
+            //saae.KeyStorageMachine();
+            #endregion
 
+            #region [ Certificates ]
+            Certificates certificates = new Certificates();
+            //TODO: implementation
+            #endregion
+
+            #region [ Hashing ]
+            Hashing hashing = new Hashing();
+            //TODO: implementation
             #endregion
 
             #region [ Trace and debug ]
