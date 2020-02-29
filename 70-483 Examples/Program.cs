@@ -324,7 +324,8 @@ namespace _70_483_Examples
             //sar.HashSets();
             //sar.StacksAndQueues();
             CustomCollections cc = new CustomCollections();
-
+            //cc.CustomCollectionWithList();
+            //cc.CustomeCollectionWithCollection();
             #endregion
         }
         #endregion
