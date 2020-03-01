@@ -245,16 +245,18 @@ namespace _70_483_Examples
             //saae.RSAEncryptionDecryption();
             //saae.KeyStorageLocal();
             //saae.KeyStorageMachine();
+            saae.DoubleEncryption();
             #endregion
 
             #region [ Certificates ]
             Certificates certificates = new Certificates();
-            //TODO: implementation
+            //certificates.SignData();
             #endregion
 
             #region [ Hashing ]
             Hashing hashing = new Hashing();
-            //TODO: implementation
+            //hashing.CalculateCheckSum();
+            //hashing.Sha256();
             #endregion
 
             #region [ Trace and debug ]

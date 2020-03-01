@@ -12,6 +12,7 @@ namespace Encryption
         public void RSAEncryptionDecryption() => new RSA().RSAEncryptDecrypt();
         public void KeyStorageLocal() => new KeyStorage().LocalStorage();
         public void KeyStorageMachine() => new KeyStorage().MachineStorage();
+        public void DoubleEncryption() => new EncryptStreamExample().EncryptStream();
     }
 
     #region [ Aes ]
@@ -159,7 +160,7 @@ namespace Encryption
         public void MachineStorage()
         {
             CspParameters cspParams = new CspParameters();
-            cspParams.KeyContainerName= "Machine Level Key";
+            cspParams.KeyContainerName = "Machine Level Key";
             cspParams.Flags = CspProviderFlags.UseMachineKeyStore;
             RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(cspParams);
             Console.WriteLine(rsa.ToXmlString(includePrivateParameters: false));
@@ -167,6 +168,74 @@ namespace Encryption
             rsa.PersistKeyInCsp = true;
             // Clear the provider to make sure it saves the key
             rsa.Clear();
+        }
+    }
+    #endregion
+
+    #region [ Encrypt stream ]
+    public class EncryptStreamExample
+    {
+        public void EncryptStream()
+        {
+            string plainText = "This is my plain text";
+            //byte[] to hold the encrypted message;
+            byte[] encryptedText;
+            // byte arrays to hold the key that was used for encryption
+            byte[] key1;
+            byte[] key2;
+
+            // byte array to hold the initialization vector that was used for encryption
+            byte[] iv1;
+            byte[] iv2;
+
+            using Aes aes1 = Aes.Create();
+            // copy the key and the initialization vector
+            key1 = aes1.Key;
+            iv1 = aes1.IV;
+
+            ICryptoTransform encryptor1 = aes1.CreateEncryptor();
+            // Create a new memory stream to receive the encrypted data.
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // create a CryptoStream, tell it the stream to write to and the encryptor to use. Also set the mode
+                using CryptoStream cs1 = new CryptoStream(ms, encryptor1, CryptoStreamMode.Write);
+                // Add another layer of encryption
+                using Aes aes2 = Aes.Create();
+                // copy the key and the initialization vector
+                key2 = aes2.Key;
+                iv2 = aes2.IV;
+                ICryptoTransform encryptor2 = aes2.CreateEncryptor();
+                using CryptoStream cs2 = new CryptoStream(cs1, encryptor2, CryptoStreamMode.Write);
+                using (StreamWriter sw = new StreamWriter(cs2))
+                {
+                    sw.Write(plainText);
+                }
+                // get the encrypted message from the stream
+                encryptedText = ms.ToArray();
+            }
+
+            // Now do the decryption
+            string decryptedText;
+            using Aes aesd1 = Aes.Create();
+            // Configure the aes instances with the key and initialization vector to use for the decryption
+            aesd1.Key = key1;
+            aesd1.IV = iv1;
+            // Create a decryptor from aes1
+            ICryptoTransform decryptor1 = aesd1.CreateDecryptor();
+            using (MemoryStream decryptStream = new MemoryStream(encryptedText))
+            {
+                using CryptoStream decryptCryptoStream1 = new CryptoStream(decryptStream, decryptor1, CryptoStreamMode.Read);
+                using Aes aesd2 = Aes.Create();
+                // Configure the aes instances with the key and initialization vector to use for the decryption
+                aesd2.Key = key2;
+                aesd2.IV = iv2;
+                // Create a decryptor from aes2
+                ICryptoTransform decryptor2 = aesd2.CreateDecryptor();
+                using CryptoStream decryptCryptoStream2 = new CryptoStream(decryptCryptoStream1, decryptor2, CryptoStreamMode.Read);
+                using StreamReader srDecrypt = new StreamReader(decryptCryptoStream2);
+                decryptedText = srDecrypt.ReadToEnd();
+            }
+            Console.WriteLine("Decrypted string: {0}", decryptedText);
         }
     }
     #endregion
